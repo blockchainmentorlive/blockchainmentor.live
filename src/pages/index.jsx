@@ -1,4 +1,5 @@
 export default function Homepage() {
+  const pageUrl = `https://youtube.com/${process.env.YOUTUBE_SLUG}`;
   return (
     <div className="mt-2 container mx-auto">
       <h1 className="text-center text-3xl border-white py-2">
@@ -15,7 +16,7 @@ export default function Homepage() {
         </div>
 
         <div className="flex w-full flex-col md:flex-row md:px-16  justify-around">
-          <div className="w-full flex flex-col justify-center w-1/3 text-gray-700 my-8 px-8 md:my-16">
+          <div className="flex flex-col justify-center w-1/3 text-gray-700 my-8 px-8 md:my-16">
             <div className="border-gray-200 font-medium text-2xl text-center">
               Tutorial videos
             </div>
@@ -25,14 +26,14 @@ export default function Homepage() {
             </div>
             <div>
               <a
-                href="https://youtube.com/blockchainmentorlive"
-                className="text-center block pt-2">
+                href={pageUrl}
+                className="text-center block pt-2 text-blue-500">
                 Watch on Solidity and DeFi screencasts on Youtube
               </a>
             </div>
           </div>
 
-          <div className="w-full flex flex-col justify-center w-1/3 text-gray-700 my-8 px-8 md:my-16">
+          <div className="flex flex-col justify-center w-1/3 text-gray-700 my-8 px-8 md:my-16">
             <div className="border-gray-200 font-medium text-2xl text-center">
               Livestream
             </div>
@@ -42,8 +43,8 @@ export default function Homepage() {
             </div>
             <div>
               <a
-                href="https://youtube.com/blockchainmentorlive"
-                className="text-center block pt-2">
+                href={pageUrl}
+                className="text-center block pt-2 text-blue-500">
                 Watch on Solidity and DeFi screencasts on Youtube
               </a>
             </div>
@@ -51,7 +52,7 @@ export default function Homepage() {
         </div>
 
         <div className="w-full flex justify-around md:flex-row md:px-16 ">
-          <div className="w-full bg-blue-100 flex  flex-col justify-center w-1/3 text-gray-700 p-8 border border-blue-200 my-8 md:my-16">
+          <div className="bg-blue-100 flex  flex-col justify-center w-1/3 text-gray-700 p-8 border border-blue-200 my-8 md:my-16">
             <div className="border-b border-gray-200 font-medium text-2xl text-center">
               One on One Mentoring
             </div>
